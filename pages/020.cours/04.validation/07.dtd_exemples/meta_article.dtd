@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- La déclaration ci-dessus n'est pas obligatoire si votre fichier est encodé en UTF-8.  Dans le cas contraire, IL FAUT préciser l'encodage -->
+<!-- On peut aussi mettre des commentaires dans une DTD, de la même manière 
+     que dans un document XML
+-->
+<!-- ========================================================= -->
+<!--  MASTER 2 DEFI - PARIS X NANTERRE                         -->
+<!--                                                           -->
+<!-- Exemple de DTD : voir le fichier                          -->
+<!-- meta_article_simple_with-dtd.xml                          -->
+<!--                                                           -->
+<!-- ========================================================= -->
+
+<!-- DÉCLARATION D'ENTITÉS PARAMÈTRES -->
+<!-- Attention à la syntaxe !
+* l'espace entre '%' et le nom de l'entité est obligatoire
+* par contre, l'entité s'utilise en notant %text;  
+-->
+
+<!ENTITY % text "#PCDATA|sup|sub|italic|emphasis|br">
+
+<!-- Déclaration de l'attribut xml:lang. On utilise un NMTOKEN pour
+     restreindre la forme du texte, qui devra suivre 
+     les mêmes règles que les noms d'éléments (en particulier, commencer
+     par une lettre, et ne pas contenir d'espace).
+-->
+<!ENTITY % lang "xml:lang NMTOKEN #REQUIRED">
+
+<!-- DÉCLARATION D'ENTITÉS GÉNÉRALES -->
+<!ENTITY euro "&#x20AC;"> <!-- le signe € -->
+
+<!ELEMENT sup      (%text;)*>
+<!ELEMENT sub      (%text;)*>
+<!ELEMENT italic   (%text;)*>
+<!ELEMENT emphasis (%text;)*>
+<!ELEMENT br EMPTY>
+
+<!-- ÉLÉMENT RACINE -->
+<!-- REMARQUE : dans une DTD, il n'y a pas moyen de déclarer explicitement qu'un 
+     élément est l'élément racine.
+ -->
+
+<!ELEMENT article-data (journal-meta,issue-meta,article-meta)>
+
+<!-- Ajout d'attributs OBLIGATOIRES 'doi'  et 'xml:lang' -->
+<!ATTLIST article-data 
+          doi CDATA #REQUIRED
+          %lang;>
+
+<!-- ÉLÉMENT journal-meta et fils -->
+<!ELEMENT journal-meta ( journal-title, journal-shorttitle? )>
+<!-- #PCDATA : correspond à un noeud de type 'texte'. C'est donc un 
+     élément 'terminal', une 'feuille' de l'arbre, sans élément fils -->
+<!ELEMENT journal-title (#PCDATA) >
+<!ELEMENT journal-shorttitle (#PCDATA) >
+          
+<!-- ÉLÉMENT issue-meta et fils -->
+<!-- soit volume ou issue ou les deux -->
+<!-- mais la DTD ne permet pas de noter exactement ce qu'on veut --> 
+<!ELEMENT issue-meta (volume|issue)* >
+<!ELEMENT volume (#PCDATA)>
+<!ELEMENT issue  (#PCDATA)>
+
+<!-- ELEMENT article-meta
+ Les indicateurs d'occurences suivant sont utilisés :
+  '+' : élément obligatoire et éventuellement multiple (de 1 à l'infini)
+  '?' : élément optionnel (de 0 à 1)
+  '*' : élement optionnel et éventuellement multiple (de 0  à l'infini)
+En l'absence d'indicateur d'occurence, l'élément est obligatoire et unique (de 1 à 1)
+-->
+<!ELEMENT article-meta (
+          article-title+,pages?,authors-group?,
+          affiliations-group?,abstract*,keywords-group?)>
+<!-- Attribut article-type avec une liste de valeurs possibles :
+     Attention ! ces valeurs ne doivent pas contenir d'espace
+-->
+<!ATTLIST article-meta article-type (Letter|RegularArticle|Editorial|Foreword) 'RegularArticle'>
+<!ELEMENT article-title (%text;)*>
+<!ATTLIST article-title %lang;>
+
+<!-- 'pages' est un élément vide : il ne contient pas de text, et les informations
+     sont notés dans des attributs. -->
+<!ELEMENT pages EMPTY>
+<!-- On défini pour l'élément 'page' deux attributs : un obligatoire 'first', l'autre 
+     optionnel 'last'
+-->
+<!ATTLIST pages 
+          first CDATA #REQUIRED 
+          last  CDATA #IMPLIED>
+           
+<!ELEMENT authors-group (author+)>
+<!ELEMENT author (first-name?, last-name, email*)>
+<!ATTLIST author id_aff IDREFS #IMPLIED>
+<!ELEMENT first-name (#PCDATA)>
+<!ELEMENT last-name  (#PCDATA)>
+<!ELEMENT email      (#PCDATA)>
+
+<!ELEMENT affiliations-group (affiliation+)>
+<!ELEMENT affiliation (#PCDATA)>
+<!ATTLIST affiliation xml:id ID #REQUIRED>
+
+<!ELEMENT abstract (%text;)*>
+<!ATTLIST abstract %lang;>
+
+<!ELEMENT keywords-group (keyword+)>
+<!ELEMENT keyword (%text;)*>
+<!ATTLIST keyword %lang;>

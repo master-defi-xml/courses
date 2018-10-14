@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- <?xml-stylesheet type="text/xsl" href="recette2html.xsl"?> -->
+<!DOCTYPE recette SYSTEM "recette.dtd">
+
+<recette>
+    <titre>Poisson à la sénégalaise (Penda Mbaye)</titre>
+    <durée type="total">1 h 45</durée>
+    <difficulté>facile</difficulté>
+    <illustration href="poisson_senegalaise_gd.jpg"></illustration>
+<source>http://www.meilleurduchef.com</source>
+    <liste_ingrédients nb_convive="4 à 5">
+	<ingrédient quantité="1,5" unité="kg">
+	    poisson maigre ou charnu
+	</ingrédient>
+	<ingrédient quantité="50" unité="g">
+	    fruits de mer (moules, coques, crevettes...)
+	</ingrédient>
+	<ingrédient quantité="150" unité="g">
+	    tomate concentrée
+	</ingrédient>
+	<ingrédient quantité="150" unité="g">
+	    oignons
+	</ingrédient>
+	<ingrédient quantité="500" unité="g">
+	    riz
+	</ingrédient>
+	<ingrédient quantité="3">
+	    aubergines
+	</ingrédient>
+	<ingrédient quantité="3">
+	    carottes
+	</ingrédient>
+	<ingrédient quantité="3">
+	    navets
+	</ingrédient>
+	<ingrédient>
+	    piment
+	</ingrédient>
+	<ingrédient quantité="200" unité="g">
+	    tomates fraîches
+	</ingrédient>
+	<ingrédient quantité="1">
+	    poivron vert
+	</ingrédient>
+	<ingrédient>
+	    chou-fleur
+	</ingrédient>
+	<ingrédient>
+          huile d'olive
+	</ingrédient>
+	<ingrédient quantité="1">
+          gousse d'ail
+	</ingrédient>
+	<ingrédient>
+          sel
+	</ingrédient>
+	<ingrédient>
+          poivre
+	</ingrédient>
+    </liste_ingrédients>
+    <liste_étapes>
+	<étape>Faire suer à l'huile d'arachide, les oignons hachés, l'ail écrasé et le poivron vert émincé finement.</étape>
+	<étape>Concasser les tomates et tailler en paysanne les carottes et les navets.</étape>
+	<étape>Les ajouter dans la cocotte.</étape>
+	<étape>Ajouter également le concentré de tomates.</étape>
+	<étape>Bien remuer.</étape>
+	<étape>Mouiller avec un grand verre d'eau.</étape>
+	<étape>Ajouter les aubergines taillées en dés le chou-fleur coupé en sommités et bien mélanger.</étape>
+	<étape>Cuire à couvert pendant une vingtaine de minutes.</étape>
+	<étape>Retirer le couvercle et disposer sur les légumes les morceaux de poisson coupé en gros morceaux.</étape>
+	<étape>Ajouter les fruits de mer au dessus du poisson et cuire à couvert une quinzaine de minutes.</étape>
+	<étape>Le poisson va cuire à l'étouffé en s'imprégnant des parfums des légumes.</étape>
+	<étape>Au terme de la cuisson, retirer le couvercle remuer délicatement afin de vérifier que la sauce n'ait pas attaché au fond du récipient de cuisson. Rectifier l'assaisonnement.</étape>
+	<étape>Réserver au chaud.</étape>
+	<étape>Servir chaud.</étape>
+    </liste_étapes>
+    <accord_boisson type="vin blanc">
+	un bandol blanc
+    </accord_boisson>
+</recette>

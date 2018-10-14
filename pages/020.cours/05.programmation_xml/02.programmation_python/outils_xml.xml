@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListeOutils modification="19/12/2006">
+  <outil type="bibliothèque" xml:id="libxml2" os="Unix Linux Win MacOS">
+    <nom>
+      Bibliothèque libxml2
+    </nom>
+    <auteurs>
+      <nom>Daniel Veillard</nom>
+    </auteurs>
+    <licence>
+      MIT Licence (libre)
+    </licence>
+    <téléchargement>
+      <url>http://xmlsoft.org/</url>
+    </téléchargement>
+    <commentaire>
+    Bibliothèque XML  rapide servant de base à de nombreuses applications.  Fournit avec toute bonne distribution Linux. Disponible également pour Windows et MacOSX. Le module XML::LibXML permet de l'utiliser dans des programmes Perl. Il existe aussi un module pour PHP.
+    <ul><li>Support des DTD</li><li>Support de Relax NG</li><li>Support partiel des XML Schema</li></ul>
+    </commentaire>
+  </outil>
+  <outil type="bibliothèque" xml:id="libxslt" os="Unix Linux Win MacOS">
+    <nom>
+      Bibliothèque libxslt
+    </nom>
+    <auteurs><nom>Daniel Veillard</nom></auteurs>
+    <licence>
+      MIT Licence (libre)
+    </licence>
+    <téléchargement><url>http://xmlsoft.org/XSLT/</url></téléchargement>
+    <commentaire>
+    Bibliothèque XSLT, basée sur <lien refid="libxml2"/>. Le module XML::LibXSLT permet de l'utiliser dans des programmes Perl. Il existe aussi un module pour PHP.
+    </commentaire>
+  </outil>
+  <outil type="validateur" xml:id="xmllint">
+    <nom>
+      xmllint
+    </nom>
+    <auteurs>
+      <nom/>
+    </auteurs>
+    <licence>
+      MIT Licence (libre)
+    </licence>
+    <téléchargement>
+      <url>http://xmlsoft.org/</url>
+    </téléchargement>
+    <commentaire>
+     Parseur/validateur en ligne de commande fournit avec <lien refid="libxml2"/>. Disponible également pour Windows et MacOSX.
+    </commentaire>
+  </outil>
+  <outil type="processeur XSLT" xml:id="xsltproc">
+    <nom>
+      xsltproc
+    </nom>
+    <auteurs>
+      <nom/>
+    </auteurs>
+    <licence>
+      MIT Licence (libre)
+    </licence>
+    <téléchargement>
+      <url>http://xmlsoft.org/XSLT/</url>
+    </téléchargement>
+    <commentaire>
+     Moteur XSLT en ligne de commande fournit avec <lien refid="libxslt"/>. Fournit avec toute bonne distribution Linux. Disponible également pour Windows et MacOSX. Le module XML::LibXSLT permet de l'utiliser dans des programmes Perl.
+    </commentaire>
+  </outil>
+  <outil type="divers" xml:id="xsh" os="Unix Linux Win MacOS">
+    <nom>
+      XSH : XML Editing Shell
+    </nom>
+    <auteurs>
+      <nom>Petr Pajas</nom>
+    </auteurs>
+    <licence>
+     ?? (libre)
+    </licence>
+    <téléchargement>
+      <url>http://xsh.sourceforge.net/</url>
+    </téléchargement>
+    <commentaire>
+    Outils en ligne de commande Unix/Cygwin permettant de manipuler un arbre XML. Basé sur <lien refid="libxml2"/> et les modules perl qui l'utilisent.
+    </commentaire>
+  </outil>
+  <outil type="bibliothèque" xml:id="xerces">
+    <nom>
+      Bibliothèque Xerces
+    </nom>
+    <auteurs>exo2_1.html#
+      <collaboration>The Apache Software Foundation</collaboration>
+    </auteurs>
+    <licence>
+       Apache Software License, Version 2.0.
+    </licence>
+    <téléchargement>
+      <url>http://xerces.apache.org/</url>
+    </téléchargement>
+    <commentaire>
+     Bibliothèque XML de la Apache Foundation. Existe en version C++ (<i>xerces-c</i>) et Java (<i>xerces-j</i>). Un module
+     XML::Xerces permet d'utiliser la version C++ dans les programmes Perl.
+    </commentaire>
+  </outil>
+  <outil type="processeur XSLT" xml:id="xalan">
+    <nom>
+      Bibliothèque Xalan
+    </nom>
+    <auteurs>
+      <collaboration>The Apache Software Foundation</collaboration>
+    </auteurs>
+    <licence>
+       Apache Software License, Version 2.0.
+    </licence>
+    <téléchargement>
+      <url>http://xalan.apache.org/</url>
+    </téléchargement>
+    <commentaire>
+     Bibliothèque XSLT de la Apache Foundation. Existe en version C++ (xalan-c) et Java (xalan-j). Le module qui permettait de l'utiliser 
+dans les programmes en Perl n'existe plus, malheureusement...
+    </commentaire>
+  </outil>
+  <outil type="stylesheet" xml:id="ascii-treeview">
+    <nom>
+      ascii-treeview
+    </nom>
+    <auteurs>
+      <nom/>
+    </auteurs>
+    <licence>
+      <i>"No license; use freely, but please credit the authors if republishing elsewhere."</i>
+    </licence>
+    <téléchargement>
+      Version ASCII : <url>http://skew.org/xml/stylesheets/treeview/ascii/ascii-treeview.xsl</url><br/>
+      Version HTML : <url>http://skew.org/xml/stylesheets/treeview/html/ascii-treeview.xsl</url>
+    </téléchargement>
+    <commentaire>
+      Un feuille de style XSLT pour obtenir une vue arborescente d'un fichier XML en ascii ou en html
+    </commentaire>
+  </outil>
+  <!-- les editeurs : -->
+  <outil type="éditeur" xml:id="emacs" os="Win Unix MacOS">
+    <nom>GNU Emacs, avec le mode nxmls</nom>
+    <licence>GPL</licence>
+    <téléchargement>
+      <url>http://www.gnu.org/emacs</url>
+      <br/>
+      <url>http://www.thaiopensource.com/nxml-mode/</url>
+    </téléchargement>
+    <commentaire>
+      Éditeur de texte généraliste puissant et hautement configurable, 
+      avec un mode xml : nxmls. Un bon
+      support pour RelaxNG, UTF-8, etc. 
+      Prise en main et installation non intuitive.
+    </commentaire>
+  </outil>
+  <outil type="éditeur" xml:id="eclipse" os="Java">
+    <nom>Eclipse, avec le plugin XMLBuddy</nom>
+    <licence>The Eclipse Foundation (open source)</licence>
+    <téléchargement>
+      <url>http://www.eclipse.org</url>
+      <br/>
+      <url>http://www-128.ibm.com/developerworks/library/os-ecxml/</url>
+      <br/>
+      <url>http://www.xmlbuddy.com/</url>
+      <br/>
+    </téléchargement>
+    <commentaire>
+      Interface de développement de projet généraliste, écrite en Java,
+      avec de nombreux plugins, dont XMLBuddy, pour le XML.
+      Utilise J-Xerces pour la validation. Installation non triviale...
+    </commentaire>
+  </outil>
+  <outil type="validateur" xml:id="altovaxml" os="Win MacOS">
+    <nom>AltovaXML™ 2007 </nom>
+    <licence>Altova</licence>
+    <téléchargement>
+      <url>http://software.altova.com/altovaxml.html</url>
+      <br/>
+    </téléchargement>
+    <commentaire>
+      Le validateur XML et  le processeur XSLT et XQuery de Altova. Support des versions 1.0 et 2.0 de XML et XSLT. Support des DTD et des Schema. Fournit gratuitement. 
+    </commentaire>
+  </outil>
+  <outil type="éditeur" xml:id="peterxml" os="Win">
+    <nom>Peter's XML Editor</nom>
+    <licence>??</licence>
+    <téléchargement>
+      <url>http://www.iol.ie/~pxe/</url>
+    </téléchargement>
+    <commentaire>
+      Voir <url>http://www.iol.ie/~pxe/features.html</url> pour certaines limitations. 
+     </commentaire>
+  </outil>
+  <outil type="éditeur" xml:id="xpontus" os="Java">
+    <nom>XPONTUS</nom>
+    <licence>GPL</licence>
+    <téléchargement>
+      <url>http://xpontus.sourceforge.net/index.html</url>
+    </téléchargement>
+    <commentaire>
+     Projet récent visant à offrir une alternative libre à l'éditeur Oxygen.
+     </commentaire>
+  </outil>
+  <outil type="éditeur" xml:id="xmlcooktop" os="Win">
+    <nom>XML Cooktop</nom>
+    <licence>freeware (Voir la page web)</licence>
+    <téléchargement>
+      <url>http://www.xmlcooktop.com/</url>
+    </téléchargement>
+    <commentaire>
+      Éditeur permettant aussi de tester des expressions XPath et d'appliquer des transformations XSLT.
+     </commentaire>
+  </outil>
+  <outil type="éditeur" xml:id="xmlcopyeditor" os="Win Linux">
+    <nom>XML Copy Editor</nom>
+    <licence>GPL</licence>
+    <téléchargement>
+      <url>http://xml-copy-editor.sourceforge.net/</url>
+    </téléchargement>
+    <commentaire>
+      Un bon éditeur sous Windows et Linux, permettant la validation et le test
+      d'expression XPath. 
+    </commentaire>
+  </outil>
+  <outil type="validateur" xml:id="weblite" os="Win">
+    <nom>Weblite</nom>
+    <licence>freeware</licence>
+    <téléchargement>
+      <url>http://alexandre.alapetite.net/distribution/weblide/index.fr.html</url>
+    </téléchargement>
+    <commentaire>
+      Processeur XML et XHTML, vérificateur de lien. Nécessite .NET 2.0.
+    </commentaire>
+  </outil>
+  <outil type="bibliothèque" xml:id="foursuite" os="Win Linux">
+    <nom>4Suite</nom>
+    <licence>Basée sur la licence Apache (libre)</licence>
+    <téléchargement>
+      <url>http://4suite.org</url>
+    </téléchargement>
+    <commentaire>
+      Ensemble intégré de modules <b>python</b> permettant de manipuler des documents XML. 
+      4Suite implémente entre autre les technologies  DOM, XSLT, XPath, XInclude, etc. 
+    </commentaire>
+  </outil>
+</ListeOutils>

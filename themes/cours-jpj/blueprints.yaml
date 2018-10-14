@@ -1,0 +1,13 @@
+name: Cours Jpj
+version: 0.1.0
+description: Theme pour mes cours
+icon: rebel
+author:
+  name: Jean-Paul JORDA
+  email: jp@jpjorda.fr
+homepage: https://github.com/jean-paul-jorda/grav-theme-cours-jpj
+demo: http://demo.yoursite.com
+keywords: grav, theme, etc
+bugs: https://github.com/jean-paul-jorda/grav-theme-cours-jpj/issues
+readme: https://github.com/jean-paul-jorda/grav-theme-cours-jpj/blob/develop/README.md
+license: MIT

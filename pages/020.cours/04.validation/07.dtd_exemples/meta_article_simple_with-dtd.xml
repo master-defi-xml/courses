@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!-- Deux façons possibles d'associer une DTD à un document :
+* lui associer un identifant et une URL (déclaration de type "PUBLIC")
+* lui associer un fichier dans l'arborescence locale (déclaration de type "SYSTEM")
+-->
+<!--
+<!DOCTYPE article-data PUBLIC "-//MOI MA DTD" "http://defi2.jpjorda.fr/static/exemples/dtd/meta_article.dtd">
+-->
+<!DOCTYPE article-data SYSTEM "meta_article.dtd">
+<article-data doi="10.1051/0004-6361:200500009" xml:lang="en">
+    <journal-meta>	
+	<journal-title>Astronomy &amp; Astrophysics</journal-title>
+	<journal-shorttitle>A&amp;A</journal-shorttitle>
+    </journal-meta>
+    <issue-meta>
+	<volume>432</volume>
+	<issue>1</issue>
+    </issue-meta>
+    <article-meta article-type="Letter">
+	<article-title xml:lang="en">Isotopic abundance of nitrogen and carbon in distant comets
+	</article-title>
+	<pages first="L5" last="L8"/>
+	<authors-group>
+	    <author id_aff="aff1">
+		<first-name>J.</first-name>
+		<last-name>Manfroid</last-name>
+		<email>manfroid@astro.ulg.ac.be</email>
+	    </author>
+	    <author id_aff="aff2">
+		<first-name>E.</first-name>
+		<last-name>Jehin</last-name>
+	    </author>
+	    <author id_aff="aff1">
+		<first-name>D.</first-name>
+		<last-name>Hutsemékers</last-name>
+	    </author>
+	    <author id_aff="aff3">
+		<first-name>A.</first-name>
+		<last-name>Cochran</last-name>
+	    </author>
+	    <author id_aff="aff4">
+		<first-name>J.-M.</first-name>
+		<last-name>Zucconi</last-name>
+	    </author>
+	    <author id_aff="aff1">
+		<first-name>C.</first-name>
+		<last-name>Arpigny</last-name>
+	    </author>
+	    <author id_aff="aff5">
+		<first-name>R.</first-name>
+		<last-name>Schulz</last-name>
+	    </author>
+	    <author id_aff="aff6">
+		<first-name>J. A.</first-name>
+		<last-name>Stüwe</last-name>
+	    </author>
+	</authors-group>
+	<affiliations-group>
+	    <affiliation xml:id="aff1">
+		Institut d’Astrophysique et de Géophysique, Université de Liège, Allée du 6 Août 17, 4000 Liège,
+ Belgium
+	    </affiliation>
+	    <affiliation xml:id="aff2">
+European Southern Observatory, Casilla 19001, Santiago, Chile
+	    </affiliation>
+	    <affiliation xml:id="aff3">
+Department of Ast
+ronomy and McDonald Observatory, University of Texas at Austin, C-1400 Austin, USA
+	    </affiliation>
+	    <affiliation xml:id="aff4">
+Observatoire de Besançon, 25010 Besançon Cedex, France
+	    </affiliation>
+	    <affiliation xml:id="aff5">
+ESA/RSSD, ESTEC, PO Box 299, 2200 AG Noordwijk, The Netherlands
+	    </affiliation>
+	    <affiliation xml:id="aff6">
+Leiden Observatory, 2300 RA Leiden, The Netherlands
+	    </affiliation>
+	</affiliations-group>
+	<abstract xml:lang="en">
+The 12 C14 N/12 C15 N and 12 C14 N/13 C14 N isotopic ratios have
+ been determined in comets C/1995 O1 (<italic>Hale-Bopp</italic>), C/2001 Q4 (NEAT) and C/2003 K4
+ (LINEAR) at heliocentric distances of, respectively, 2.7, 3.7 and 2.6 AU. These
+ ratios have also been measured at r ∼ 1 AU. No signiﬁcant diﬀerences were found
+ between all determinations, nor with the value obtained for other comets. If co
+nﬁrmed, the discrepancy between the nitrogen isotopic ratios from optical and mi
+llimeter measurements on CN and HCN would rule out HCN as a major parent of the 
+cometary CN radicals.
+	</abstract>
+	<keywords-group>
+	    <keyword xml:lang="en">comets: abundances</keyword>
+	    <keyword xml:lang="en">comets: individual: C/1995 O1 (Hale-Bopp), C/2001 Q4 (NEAT), C/2003 K4 (LINEAR)</keyword>
+	</keywords-group>
+    </article-meta>
+</article-data>

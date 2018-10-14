@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!ELEMENT recette (titre,durée+,difficulté?,illustration?,auteur?,source?,liste_ingrédients,liste_étapes,accord_boisson,remarques?) >
+
+<!ELEMENT titre (#PCDATA) >
+<!ELEMENT durée (#PCDATA) >
+<!ATTLIST durée type CDATA #REQUIRED> 
+
+<!ELEMENT difficulté (#PCDATA) >
+<!ELEMENT illustration (#PCDATA) >
+<!ATTLIST illustration href CDATA #REQUIRED> 
+
+<!ELEMENT auteur (#PCDATA) >
+<!ELEMENT source (#PCDATA) >
+<!ELEMENT liste_ingrédients (ingrédient+) >
+<!ATTLIST liste_ingrédients nb_convive CDATA #REQUIRED>
+<!ELEMENT liste_étapes (étape+) >
+<!ELEMENT accord_boisson (#PCDATA) >
+<!ATTLIST accord_boisson type CDATA #IMPLIED>
+
+<!ELEMENT remarques (#PCDATA) >
+
+<!ELEMENT ingrédient (#PCDATA) >
+<!ATTLIST ingrédient quantité CDATA #IMPLIED unité CDATA #IMPLIED>
+
+<!ELEMENT étape (#PCDATA|gloss)* >

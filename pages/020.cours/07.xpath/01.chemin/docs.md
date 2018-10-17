@@ -1,8 +1,10 @@
 ---
-title: Chemin de localisation XPath
+title: 'Chemin de localisation XPath'
 taxonomy:
-    category: docs
+    category:
+        - docs
 ---
+
 ### Chemin de localisation XPath
 Le chemin de localisation se construit par une suite d‘étapes, séparée
 par des ‘/’ . Chaque étape est construit avec les composants suivant :
@@ -12,8 +14,8 @@ par des ‘/’ . Chaque étape est construit avec les composants suivant :
 3.  des prédicats.
 
 [Exemples de chemin de
-localisation](http://www.w3.org/TR/xpath/#location-paths)
+localisation](https://www.w3.org/TR/1999/REC-xpath-19991116/#location-paths)
 
 Il existe aussi une syntaxe abrégée, plus utilisée.
 
-[Exemples de syntaxe abrégée](http://www.w3.org/TR/xpath/#path-abbrev)
+[Exemples de syntaxe abrégée](https://www.w3.org/TR/1999/REC-xpath-19991116/#path-abbrev)

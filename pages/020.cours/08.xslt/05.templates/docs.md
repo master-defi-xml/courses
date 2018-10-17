@@ -5,7 +5,7 @@ taxonomy:
         - docs
 ---
 
-### XSLT : <xsl:template> et <xsl:apply-templates>
+### XSLT : &lt;xsl:template> et &lt;xsl:apply-templates>
 -   Le parcours de l’arbre d’entrée commence par la racine du document
 -   La règle modèle (*template*) correspondante à la racine du document
     est appliquée (cela peut-être [la règle modèle

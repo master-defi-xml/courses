@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fournitures>
+  <itemlist>
+    <item>poisson maigre ou charnu</item>
+    <item>fruits de mer (moules, coques, crevettes...) <warning>bien frais</warning></item>
+    <item>tomate concentrée</item>
+    <item>oignons</item>
+    <item>riz</item>
+    <item>aubergines</item>
+    <item>carottes</item>
+    <item>navets</item>
+    <item>piment</item>
+    <item>tomates fraîches</item>
+    <item>poivron vert</item>
+    <item>chou-fleur</item>
+    <item>huile d'olive</item>
+    <item>gousse d'ail</item>
+    <item>sel</item>
+    <item>poivre</item>
+  </itemlist>
+</fournitures>

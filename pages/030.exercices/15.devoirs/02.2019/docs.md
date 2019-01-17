@@ -1,15 +1,18 @@
 ---
-title: DEVOIR 2018-2019
+title: 'DEVOIR 2018-2019'
 taxonomy:
-    category: docs
+    category:
+        - docs
 ---
 
 #  M2 DEFI XML  - DEVOIR 2018-2019
 
+__À rendre avant le mercredi 7 novembre__
+
 ## Présentation
 
 L'équipe du [LIGM](http://infolingu.univ-mlv.fr/) de l'université Paris-Est met à disposition (Licence : [Lesser General Public License For Linguistic Resources](http://infolingu.univ-mlv.fr/DonneesLinguistiques/Lexiques-Grammaires/lgpllr.html)) des ressources linguistiques au format XML.
-Le téléchargement est disponible [ici](http://infolingu.univ-mlv.fr/DonneesLinguistiques/Dictionnaires/telechargement.html)
+Le téléchargement est disponible [ici](http://infolingu.univ-mlv.fr/DonneesLinguistiques/Dictionnaires/telechargement.html) (mais est également fourni dans les fichiers à récupérer pour le devoir : voir ci-après). 
 
 Dans ce devoir, nous allons étudier comment extraire de l'information de l'une de ces ressources, le _Dictionnaire DELA fléchi du français_.
 
@@ -39,11 +42,13 @@ Dans votre espace de travail, créez un répertoire `devoir_<votre_nom>` (par ex
 
 ### Les fichiers à récupérer
 
-Dans ce répertoire, lancez la commande pour récupérer les fichiers nécessaires au devoir :
+Dans la console, placez vous dans ce répertoire, et  lancez la commande pour récupérer les fichiers nécessaires au devoir :
 
 	git clone https://github.com/master-defi-xml/devoir-2018-2019.git .
 
 (le point à la fin de la commande évite qu'un répertoire `devoir-2018-2019` ne soit créé, mais ça ne fonctionne que si votre répertoire de travail est vide).
+
+(Vous pouvez également récupérer [l'ensemble des fichiers](https://github.com/master-defi-xml/devoir-2018-2019/archive/master.zip) dans une archive zip.   
 
 ### Désarchivage du dictionnaire
 Dans le répertoire de travail, désarchivez le dictionnaire :
@@ -58,8 +63,8 @@ unzip  dela-fr-public-u8-xml.zip
 
 Le dictionnaire est volumineux (167Mo) : il n'est pas recommandé d'essayer de l'éditer. Cela implique également des temps de traitement non négligeable. Notre première étape consiste donc à créer un fichier contenant un extrait du dictionnaire pour pouvoir travailler plus confortablement.
 
-* a. Donnez l'expression xpath permettant de compter le nombre d'élément fils de l'élément racine. L'expression doit être générale : elle doit pouvoir s'appliquer à n'importe quel type de document, indépendamment du nom des éléments.
-* b. Donnez l'expression xpath permettant de sélectionner 200 éléments fils de l'élément racine à partir du 2000ième (les éléments 2001 à 2200).
+* a. Donnez l'expression XPath permettant de compter le nombre d'élément fils de l'élément racine. L'expression doit être générale : elle doit pouvoir s'appliquer à n'importe quel type de document, indépendamment du nom des éléments.
+* b. Donnez l'expression XPath permettant de sélectionner 200 éléments fils de l'élément racine à partir du 2000ième (les éléments 2001 à 2200).
 *  c. Mettez au point une feuille de style XSLT (que vous appellerez `extrait.xsl`) permettant de construire un extrait du dictionnaire comportant  l'élément racine et 200 éléments fils de l'élément racine à partir du 2000ième (les éléments 2001 à 2200). Appliquez cette feuille de style au document  `dela-fr-public-u8.dic.xml`. _Vous devez obtenir un document identique à_ `dela-fr-public-u8-petit-extrait.dic.xml`.
 
 ## 2. Étude du format
@@ -76,7 +81,7 @@ un_element_obligatoire [@un_attribut, @un_autre_attribut] --> un_autre_element_o
 
 b. Donnez les expressions XPath absolues permettant d'adresser :
 
-* le nombre d'éléments `<entry` ;
+* le nombre d'éléments `<entry>` ;
 * tous les éléments `<lemma>` ;
 * les élements `<lemma>` décrivant des verbes (c.-à-d. dont l'attribut _name_ de `<pos>` vaut "verb") ;
 * les éléments contenant les formes fléchies (c.-à-d. les éléments `<form>` fils d'`<inflected>`) des verbes.
@@ -84,7 +89,7 @@ b. Donnez les expressions XPath absolues permettant d'adresser :
 ## 3. Extraction des verbes
 
 Vous allez maintenant utiliser l'extrait `dela-fr-public-u8-petit-extrait.dic.xml` pour mettre au point vos expression XPath et vos feuilles de style XSLT.
-Vous allez chercher à extraire du document les entrées (`<entry>`) correspondant à des verbes (comme vous avez du le constater, le type du mot est déterminez par la valeur de l'attribut _name_ de l'élément `<pos>`)
+Vous allez chercher à extraire du document les entrées (`<entry>`) correspondant à des verbes (comme vous avez du le constater, le type du mot est déterminé par la valeur de l'attribut _name_ de l'élément `<pos>`)
 
 * a. L'élément racine du document est `<dico>`. Si ce nœud est le _contexte courant_, donnez l'expression XPath _relative_ permettant d'adresser les entrées de type « verb ».
 * b. Mettez au point une feuille de style XSLT (que vous appellerez `verbes.xsl`) permettant d'obtenir un document contenant uniquement les entrées des verbes.  _Vous devez obtenir un document identique à_ `dela-fr-public-u8-verbes.dic.xml`.
@@ -100,7 +105,7 @@ Toujours en partant de  `dela-fr-public-u8-petit-extrait.dic.xml` :
 ## Rendu du devoir
 
 
-Vous devez envoyer votre devoir sous la forme d'une archive _mon-nom_.zip ou _mon-nom_.tar.gz (vous pouvez utilisez pour cela la fonction « download » de votre espace codeanywhere.com). Cette archive devra contenir les fichiers suivant :
+Vous devez envoyer votre devoir sous la forme d'une archive _mon-nom_.zip ou _mon-nom_.tar.gz. Cette archive devra contenir les fichiers suivant :
 ```
     devoir.txt (voir les consignes)
     extrait.xsl

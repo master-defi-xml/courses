@@ -152,7 +152,6 @@ class NewThemeCommand extends DevToolsCommand
             );
             $this->component['copy'] = $helper->ask($this->input, $this->output, $question);
         }
-        var_dump($this->component);
         $this->createComponent();
     }
 

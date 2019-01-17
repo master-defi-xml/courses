@@ -108,7 +108,7 @@ class DevToolsCommand extends ConsoleCommand
             $component_folder = $this->locator->findResource($type . 's://') . DS . $folder_name;
         }
 
-        print "!!! TF = $template_folder";
+
 
         if (isset($source_theme)) {
             /**
@@ -170,7 +170,6 @@ class DevToolsCommand extends ConsoleCommand
              */
             //Copy All files to component folder
             try {
-                print "$template_folder;$component_folder";
                 Folder::copy($template_folder, $component_folder);
             } catch (\Exception $e) {
                 $this->output->writeln("<red>" . $e->getMessage() . "</red>");
